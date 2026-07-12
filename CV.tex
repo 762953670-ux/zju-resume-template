@@ -96,175 +96,6 @@
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
   \end{tikzpicture}%
-\centerline{\LARGE\bfseries{桑乐山}} 
-\vspace{0.4em}
-\centerline{\normalsize{2024级本科生 \quad 自动化（控制）专业 \quad 专业排名：前20\%}} 
-    
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
-\textbf{浙江大学} \hfill 2024.09 -- 至今\\[0.5em] % 标题和正文间加一点距离
-控制科学与工程学院·自动化专业 
-\begin{itemize}[nosep]
-    \item \textbf{主修课程}：微积分、C程序设计基础及实验、面向对象的编程技术(C++)、数据结构基础、线性代数、人工智能基础、自动控制原理(在修)、嵌入式系统(在修)等。
-    \item \textbf{学业表现}：具备较好的数理基础，具备快速学习新知识的热情。
-\end{itemize}
-
-\section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 竞赛与项目经历}
-
-% --- 第一个项目 ---
-\textbf{SRTP项目：面向复杂姿态目标的无人机高速自适应抓取关键技术研究（进行中）} \hfill 2026.04 -- 2027.04 \titlebreak
-项目设想：在借鉴上海交大 Swooper 无人机快速抓取研究与中山大学吕熙敏团队 Delta-Arm 无人机工作空间空间优化研究的基础上，聚焦提升无人机抓取速度与复杂姿态适应性，并融合 LLM 与开放词汇视觉检测技术构建端到端抓取方案。
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{底层高速运动控制}：拟结合 Swooper PPO 强化学习策略与 MINCO 轨迹优化，配合 Fin Ray 三指柔性软爪，目标实现高速飞行与实时抓取动作输出。
-    \item \textbf{复杂姿态泛化}：拟采用 DiT 模仿学习引导优化方法，以目标位位姿为输入，探索生成 $0^{\circ} \sim 60^{\circ}$ 多形态可靠抓取轨迹。
-    \item \textbf{高层语义驱动}：拟基于 LLM 语义解析与 YOLO-World 开放词汇检测，将自然语言指令映射为三维目标位置与作业先验信息。
-\end{itemize}
-
-\projectsep
-
-% --- 第二个项目 ---
-\textbf{浙江省大学生工程实践与创新能力大赛 \ \textbar\ 队长} \hfill 2025.09 -- 2025.11 \titlebreak
-项目内容：参与开发一款基于激光雷达定位的自主飞行机器人，获得省级二等奖。
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{环境搭建}：在 Jetson Orin NX 上位机配置 Ubuntu 20.04 / ROS 运行环境，使用 Mid360 激光雷达定位，并采用 ego-planner 进行路径规划。
-    \item \textbf{功能学习}：学习使用 ROS 状态机管理无人机任务逻辑，最终实现字母识别，并用 Arduino 控制激光打击的任务。
-    \item \textbf{视觉尝试}：初步尝试在 NX 端利用 YOLO 进行简单的字母标识识别与定位调试。
-\end{itemize}
-
-\projectsep
-
-% --- 第三个项目 ---
-\textbf{浙江大学“中控杯”机器人竞赛（空中赛道） \ \textbar\ 队长} \hfill 2025.03 -- 2025.05 \titlebreak
-项目内容：完成基于视觉定位的四旋翼无人机的任务开发，获得校级一等奖。
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{环境搭建}：在 Intel NUC 上位机配置 Ubuntu 20.04 / ROS 运行环境，使用 RealSense D435 深度相机定位。
-    \item \textbf{任务开发}：基于现有 ROS 框架编写基础控制逻辑，实现无人机在视觉引导下的起降、巡线及避障。
-    \item \textbf{团队协作}：协调组员分工，负责项目文档撰写及最终现场演示。
-\end{itemize}
-
-\projectsep
-
-% --- 第四个项目 ---
-\textbf{智能循迹与抓取小车开发（课程/校内项目）} \hfill 2024.07 -- 2024.08 \titlebreak
-项目内容：使用 ESP32 制作具备基础感知能力的循迹小车。
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{底层控制}：利用 ESP32 编写电控程序，实现对舵机、电机及超声波传感器的驱动。
-    \item \textbf{机械控制}：完成小车搭载机械爪的逻辑编写，实现对简单物块的抓取与释放。
-\end{itemize}
-
-\section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 专业技能}
-\begin{itemize}[nosep]
-    \item \textbf{编程语言}：C/C++，Python，ROS。
-    \item \textbf{机器人开发}：具备 Linux 环境下的开发经验，熟悉 ROS/ROS2 基础操作与节点通信。
-    \item \textbf{硬件设备}：有 NVIDIA Jetson NX、Intel NUC 部署经历；使用过 Mid360、RealSense 等传感器。
-\end{itemize}
-
-\section{\makebox[\widthof{\faList}][c]{\color{CVBlue}\faList}\ 实践与荣誉}
-\begin{itemize}[nosep]
-    \item \textbf{荣誉}：国家奖学金、浙江大学一等奖学金。
-    \item \textbf{实践}：ZJU-FAST 战队成员。
-    \item \textbf{实践}：控制学院学生会学术部成员。
-    \item \textbf{荣誉}：浙江省大学生工程实践与创新能力大赛二等奖 \hfill 2025.11 \\
-    \item \textbf{荣誉}：浙江大学“中控杯”机器人竞赛一等奖 \hfill 2025.05 \\
-    \item \textbf{荣誉}：浙江大学智能机器人创意竞赛无人机对抗赛二等奖 \hfill 2026.04
-\end{itemize}
-    \documentclass[11pt]{article}
-
-
-\setlength{\parindent}{0pt}
-\usepackage{xltxtra}
-\usepackage{hyperref}
-\hypersetup{hidelinks}
-\usepackage{url}
-\urlstyle{tt}
-\usepackage{xcolor}
-\definecolor{CVBlue}{RGB}{23,110,191}
-\usepackage{calc}
-\usepackage{graphicx}
-\usepackage{tikz}
-\usetikzlibrary{calc}
-\usepackage{fontspec}
-\usepackage{xeCJK}
-\usepackage{enumitem}
-\CJKsetecglue{} %% 取消中文与数字之间的间隙
-
-
-%% 主文档字体设置
-\setmainfont[
-    Path = fonts/Main/,
-    Extension = .otf,
-    BoldFont = texgyretermes-bold.otf, % 加粗字体
-]{texgyretermes-regular.otf} % 正文字体
-
-% 中文字体设置
-\setCJKmainfont[
-    Path = fonts/hansans/,
-    Extension = .ttf,
-    BoldFont = NotoSansSC-Bold.ttf, % 加粗字体
-]{NotoSansSC-Regular.otf} % 正文字体
-
-
-\usepackage{relsize}
-\usepackage{xspace}
-
-% 使用 fontawesome（部分图标）
-\usepackage{fontawesome} 
-
-% A4纸，上下左右边距
-\usepackage[
-    a4paper,
-    left=1.2cm,
-    right=1.2cm,
-    top=1.5cm,
-    bottom=1cm,
-    nohead
-]{geometry}
-
-\renewcommand{\baselinestretch}{1.5} % 行间距设为1.5
-
-\usepackage{titlesec}
-\usepackage{enumitem}
-\setlist{noitemsep} % 取消列表项间的额外间距
-%\setlist{nosep} % 取消所有垂直间距
-\setlist[itemize]{topsep=0.25em, leftmargin=*}
-\setlist[enumerate]{topsep=0.25em, leftmargin=*}
-
-% --- 用于控制【不同项目之间】的垂直距离 ---
-\newlength{\interProjectSpacing}
-\setlength{\interProjectSpacing}{0.9em} % <--- 在此调整项目之间的距离
-\newcommand{\projectsep}{\vspace{\interProjectSpacing}}
-
-% --- 用于控制【项目标题】与下方【项目描述】的距离 ---
-\newlength{\intraProjectTitleSep}
-\setlength{\intraProjectTitleSep}{0.4em} % <--- 在此调整标题和描述的距离
-\newcommand{\titlebreak}{\\[\intraProjectTitleSep]}
-
-% --- 用于控制【项目描述】与下方【要点列表】的距离 ---
-\newlength{\intraProjectListTopSep}
-\setlength{\intraProjectListTopSep}{0.2em} % <--- 在此调整描述和列表的距离
-
-% =======================================================================
-
-
-\titleformat{\section}         % 定制 \section 命令 
-{\large\bfseries\raggedright} % 将 section 标题设置为大号、粗体且左对齐
-{}{0em}                      % 可用于为所有 section 添加前缀（如“章节...”）
-{}                           % 可用于在标题前插入代码
-[{\color{CVBlue}\titlerule}]  % 在标题后插入一条横线
-\titlespacing*{\section}{0cm}{*1.6}{*1.2}
-
-
-
-\begin{document}
-\pagenumbering{gobble}
-
-%%%% 利用tikz来定位照片
-\begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{avatar.jpg}};
-  \end{tikzpicture}%
-  %%%% 利用tikz来定位学校Logo，这里只在第一页显示
-  \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
-  \end{tikzpicture}%
 \centerline{\LARGE\bfseries{康鑫堡}} 
 \vspace{0.4em}
 \centerline{\normalsize{\faUser\ 中共预备党员 \quad \faPhone\ 195-5820-8920 \quad \faEnvelopeO\ \href{mailto:3230102726@zju.edu.cn}{3230102726@zju.edu.cn}}} 
@@ -278,7 +109,7 @@
     \item \textbf{相关课程}：《电力电子技术》、《信号分析与处理》、《微处理器原理与应用》、《工程电磁场与波》、《半导体物理》、《控制理论》等。
 \end{itemize}
 
-\section{\makebox[\widthof{\faFolderOpen}][c]{\color{CVBlue}\faFolderOpen}\ 学术与项目经历}
+\section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 学术与项目经历}
 
 % --- ZPEC 论文 ---
 \textbf{第二届电力电子国际会议（IEEE ZPEC 2026）录用学术论文} \hfill 2026.04 -- 至今 \titlebreak
@@ -292,9 +123,9 @@
 
 % --- 中国高校智能机器人创意大赛 ---
 \textbf{中国高校智能机器人创意大赛} \hfill 2025 -- 2026 学年 \titlebreak
-项目角色：**第一负责人**
+项目角色：\textbf{第一负责人}
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{大赛荣誉}：荣获**浙江省一等奖**、浙江大学校级三等奖。
+    \item \textbf{大赛荣誉}：荣获\textbf{浙江省一等奖}、浙江大学校级三等奖。
     \item \textbf{核心职责}：作为项目第一负责人，全面规划团队技术开发路线，负责智能机器人的机械架构设计、控制逻辑编写及软硬件系统联调。
 \end{itemize}
 
@@ -304,7 +135,7 @@
 \textbf{高校电气电子工程创新大赛} \hfill 2025 -- 2026 学年 \titlebreak
 项目角色：核心研发成员
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{大赛荣誉}：荣获**浙江省二等奖**。
+    \item \textbf{大赛荣誉}：荣获\textbf{浙江省二等奖}。
     \item \textbf{核心技术}：参与机电一体化系统及电源模块设计，负责微控制器控制程序编写，配合团队实现复杂电力电子电路的智能控制。
 \end{itemize}
 
@@ -312,16 +143,16 @@
 
 % --- SRTP ---
 \textbf{浙江大学 SRTP（大学生科研训练计划）} \hfill 2024 -- 2025 学年 \titlebreak
-项目角色：**项目核心成员**
+项目角色：\textbf{项目核心成员}
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{项目成果}：项目成功结题，因学术表现与科研成果优异，**获评院级优秀项目**。
+    \item \textbf{项目成果}：项目成功结题，因学术表现与科研成果优异，\textbf{获评院级优秀项目}。
 \end{itemize}
 
 \projectsep
 
 % --- 节能减排 ---
 \textbf{浙江大学节能减排大赛} \hfill 2024 -- 2025 学年 \titlebreak
-项目成果：深度参与节能减排创新产品的原理设计、仿真优化与物理样机搭建，荣获**校级三等奖**。
+项目成果：深度参与节能减排创新产品的原理设计、仿真优化与物理样机搭建，荣获\textbf{校级三等奖}。
 
 \projectsep
 
@@ -329,7 +160,7 @@
 \textbf{浙江大学 SQTP（学生素质训练计划）} \hfill 2024 -- 2025 学年 \titlebreak
 项目角色：项目小组成员
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{项目成果}：参与**校级重点项目**的研究论证、方案策划与最终落地，成效显著。
+    \item \textbf{项目成果}：参与\textbf{校级重点项目}的研究论证、方案策划与最终落地，成效显著。
 \end{itemize}
 
 
@@ -341,7 +172,7 @@
     \item \textbf{电信 2302 班 班长}（电气工程学院） \hfill 2024.09 -- 至今 \\
     统筹班级整体日程与日常建设，积极组织班级集体活动，推动班级向凝聚力、优良学风方向建设。
     \item \textbf{工科试验班 2323 团支部书记} \hfill 2023.09 -- 2024.06 \\
-    负责组织和开展团支部日常工作，引导支部青年思想与组织建设；因工作成果优异，**获评校级、园级“优秀团干部”**。
+    负责组织和开展团支部日常工作，引导支部青年思想与组织建设；因工作成果优异，\textbf{获评校级、园级“优秀团干部”}。
     \item \textbf{军训三团三连二班 班长} \hfill 2023.09 \\
     负责军训期间的日常队列管理与纪律维持，保障各项训练任务高效安全完成。
 \end{itemize}
@@ -352,7 +183,7 @@
 负责新生的破冰、学业生涯规划与大一生活适应性引导。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{24 级学长组 组长} \hfill 2024.09 -- 2025.06 \\
-    主导设计新生入校引导，策划方案获评**“蓝田学长组优秀破冰方案”**；个人因表现优异获评**“24-25校级优秀学长”**，带领团队获评**“24-25园级优秀学长组”**。
+    主导设计新生入校引导，策划方案获评\textbf{“蓝田学长组优秀破冰方案”}；个人因表现优异获评\textbf{“24-25校级优秀学长”}，带领团队获评\textbf{“24-25园级优秀学长组”}。
 \end{itemize}
 
 \projectsep
@@ -374,16 +205,16 @@
     \item \textbf{机械学院考拉工作室（运营部 6.0 成员）} \hfill 2024.09 -- 2025.06 \\
     协助规划考拉工作室的日常自媒体运营，主导设计多项大型品牌活动的宣传推广方案。
     \item \textbf{“求是潮”视频团队（成员）} \hfill 2023.09 -- 2024.06 \\
-    参与学校多项官方高水平视频项目的选题策划、分镜设计、现场拍摄及后期剪辑。
+    参与学校多项官方高水平视频项目的选题策划、分镜设计、现场拍摄及剪辑后期制作。
 \end{itemize}
 
 
-\section{\makebox[\widthof{\faHeartO}][c]{\color{CVBlue}\faHeartO}\ 社会实践与志愿服务}
+\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 社会实践与志愿服务}
 
 \textbf{志愿服务} \titlebreak
-热心公益，奉献社会，累计**志愿服务时长近 350 小时**，被认定为**浙江大学五星志愿者**。
+热心公益，奉献社会，累计\textbf{志愿服务时长近 350 小时}，被认定为\textbf{浙江大学五星志愿者}。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{“缘定浙大”大型志愿服务活动 \textbar\ 组长} \hfill 2024.05 \\
+    \item \textbf{“缘定浙大”大型志愿服务活动 \ \textbar\ 组长} \hfill 2024.05 \\
     担任活动核心服务小组组长，负责志愿者排班、现场点对点协调及突发问题应急处理，保障了校庆大型活动有序进行。
 \end{itemize}
 
@@ -395,11 +226,11 @@
     \item \textbf{暑期乡村振兴专项社会实践} \hfill 2024.07 \\
     加入“强化专业责任，助力乡村振兴”调研小组，深入基层开展实地访谈、数据统计，并撰写高质量调研报告。
     \item \textbf{寒假回访母校义乌二中宣讲活动} \hfill 2024.01 \\
-    赴义乌二中主讲浙江大学回访宣讲，详实分享备考经验与专业特色，**宣讲成果荣获校级一等奖**。
+    赴义乌二中主讲浙江大学回访宣讲，详实分享备考经验与专业特色，\textbf{宣讲成果荣获校级一等奖}。
 \end{itemize}
 
 
-\section{\makebox[\widthof{\faList}][c]{\color{CVBlue}\faList}\ 荣誉奖项}
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 荣誉奖项}
 \begin{itemize}[nosep]
     \item \textbf{国家励志奖学金}（2024-2025 学年） \hfill \textbf{浙江大学一等奖学金}（2023-2024 学年）
     \item \textbf{浙江大学“优秀学生”称号}（2023-2024 学年） \hfill \textbf{浙江大学郭谢碧蓉奖学金（二类）}（2023-2024 学年）
@@ -416,13 +247,5 @@
     \item \textbf{工程与机电一体化技术}：熟悉机电一体化系统开发基础，掌握 3D 打印、工程焊接等实用硬件调试技术；在机器人及微控制系统的外部架构设计、内部程序编写与系统联调上具备丰富实践经验。
     \item \textbf{外语能力}：英语水平良好（通过 CET-4, CET-6），能够顺畅、无障碍地阅读并检索英文技术文献、学术期刊及器件数据手册（Data Sheet），具备撰写英文学术论文与进行日常邮件交流的能力。
     \item \textbf{综合软实力}：在多项大型活动、班级和学长组管理中磨砺了极佳的组织协调、团队管理与人际沟通能力；善于应对复杂多变的突发状况，逻辑清晰，工作踏实。
-\end{itemize}
-\end{document}
-\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 自我评价}
-\begin{itemize}[nosep]
-    \item \textbf{学习热情}：对于自动化与机器人领域充满兴趣，积极参与相关课程与项目，具备持续学习的动力。
-    \item \textbf{学习能力}：善于运用 AI 工具辅助学习，能够快速掌握新技术并应用于实践项目中。
-    \item \textbf{实践态度}：对机器人系统集成与算法实现有浓厚兴趣，工作踏实，注重细节与执行效果。
-    \item \textbf{职业方向}：希望在自动化、机器人与智能系统相关方向持续积累工程实践经验。
 \end{itemize}
 \end{document}
