@@ -167,7 +167,257 @@
     \item \textbf{荣誉}：浙江大学“中控杯”机器人竞赛一等奖 \hfill 2025.05 \\
     \item \textbf{荣誉}：浙江大学智能机器人创意竞赛无人机对抗赛二等奖 \hfill 2026.04
 \end{itemize}
+    \documentclass[11pt]{article}
+
+
+\setlength{\parindent}{0pt}
+\usepackage{xltxtra}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{url}
+\urlstyle{tt}
+\usepackage{xcolor}
+\definecolor{CVBlue}{RGB}{23,110,191}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{enumitem}
+\CJKsetecglue{} %% 取消中文与数字之间的间隙
+
+
+%% 主文档字体设置
+\setmainfont[
+    Path = fonts/Main/,
+    Extension = .otf,
+    BoldFont = texgyretermes-bold.otf, % 加粗字体
+]{texgyretermes-regular.otf} % 正文字体
+
+% 中文字体设置
+\setCJKmainfont[
+    Path = fonts/hansans/,
+    Extension = .ttf,
+    BoldFont = NotoSansSC-Bold.ttf, % 加粗字体
+]{NotoSansSC-Regular.otf} % 正文字体
+
+
+\usepackage{relsize}
+\usepackage{xspace}
+
+% 使用 fontawesome（部分图标）
+\usepackage{fontawesome} 
+
+% A4纸，上下左右边距
+\usepackage[
+    a4paper,
+    left=1.2cm,
+    right=1.2cm,
+    top=1.5cm,
+    bottom=1cm,
+    nohead
+]{geometry}
+
+\renewcommand{\baselinestretch}{1.5} % 行间距设为1.5
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\setlist{noitemsep} % 取消列表项间的额外间距
+%\setlist{nosep} % 取消所有垂直间距
+\setlist[itemize]{topsep=0.25em, leftmargin=*}
+\setlist[enumerate]{topsep=0.25em, leftmargin=*}
+
+% --- 用于控制【不同项目之间】的垂直距离 ---
+\newlength{\interProjectSpacing}
+\setlength{\interProjectSpacing}{0.9em} % <--- 在此调整项目之间的距离
+\newcommand{\projectsep}{\vspace{\interProjectSpacing}}
+
+% --- 用于控制【项目标题】与下方【项目描述】的距离 ---
+\newlength{\intraProjectTitleSep}
+\setlength{\intraProjectTitleSep}{0.4em} % <--- 在此调整标题和描述的距离
+\newcommand{\titlebreak}{\\[\intraProjectTitleSep]}
+
+% --- 用于控制【项目描述】与下方【要点列表】的距离 ---
+\newlength{\intraProjectListTopSep}
+\setlength{\intraProjectListTopSep}{0.2em} % <--- 在此调整描述和列表的距离
+
+% =======================================================================
+
+
+\titleformat{\section}         % 定制 \section 命令 
+{\large\bfseries\raggedright} % 将 section 标题设置为大号、粗体且左对齐
+{}{0em}                      % 可用于为所有 section 添加前缀（如“章节...”）
+{}                           % 可用于在标题前插入代码
+[{\color{CVBlue}\titlerule}]  % 在标题后插入一条横线
+\titlespacing*{\section}{0cm}{*1.6}{*1.2}
+
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+%%%% 利用tikz来定位照片
+\begin{tikzpicture}[remember picture, overlay] 
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{avatar.jpg}};
+  \end{tikzpicture}%
+  %%%% 利用tikz来定位学校Logo，这里只在第一页显示
+  \begin{tikzpicture}[remember picture, overlay] 
+    \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
+  \end{tikzpicture}%
+\centerline{\LARGE\bfseries{康鑫堡}} 
+\vspace{0.4em}
+\centerline{\normalsize{\faUser\ 中共预备党员 \quad \faPhone\ 195-5820-8920 \quad \faEnvelopeO\ \href{mailto:3230102726@zju.edu.cn}{3230102726@zju.edu.cn}}} 
+\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
     
+\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
+\textbf{浙江大学} \hfill 2023.09 -- 至今\\[0.5em] % 标题和正文间加一点距离
+电子信息工程（工科试验班2323）\quad 本科在读 
+\begin{itemize}[nosep]
+    \item \textbf{学业表现}：专业排名 187/681（大一阶段名列前30\%），获浙江大学一等奖学金、国家励志奖学金、浙江大学郭谢碧蓉奖学金（二类）等。
+    \item \textbf{相关课程}：《电力电子技术》、《信号分析与处理》、《微处理器原理与应用》、《工程电磁场与波》、《半导体物理》、《控制理论》等。
+\end{itemize}
+
+\section{\makebox[\widthof{\faFolderOpen}][c]{\color{CVBlue}\faFolderOpen}\ 学术与项目经历}
+
+% --- ZPEC 论文 ---
+\textbf{第二届电力电子国际会议（IEEE ZPEC 2026）录用学术论文} \hfill 2026.04 -- 至今 \titlebreak
+成果说明：于第二届浙江电力电子国际会议发表学术论文 1 篇，已正式录用（会议定于 2026 年 8 月召开，目前处于待发表/To appear 状态）。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{作者排序}：第四作者（第一作者为陈督，通讯作者为杨永恒教授）。
+    \item \textbf{规范学术引用}：D. Chen, ..., ..., \textbf{X. Kang}, ..., Y. Yang, ``[在此填入你的论文英文题目],'' in \textit{Proc. IEEE International Zhejiang Power Electronics Conference (ZPEC)}, 2026. (Accepted/To appear)
+\end{itemize}
+
+\projectsep
+
+% --- 中国高校智能机器人创意大赛 ---
+\textbf{中国高校智能机器人创意大赛} \hfill 2025 -- 2026 学年 \titlebreak
+项目角色：**第一负责人**
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{大赛荣誉}：荣获**浙江省一等奖**、浙江大学校级三等奖。
+    \item \textbf{核心职责}：作为项目第一负责人，全面规划团队技术开发路线，负责智能机器人的机械架构设计、控制逻辑编写及软硬件系统联调。
+\end{itemize}
+
+\projectsep
+
+% --- 高校电气电子工程创新大赛 ---
+\textbf{高校电气电子工程创新大赛} \hfill 2025 -- 2026 学年 \titlebreak
+项目角色：核心研发成员
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{大赛荣誉}：荣获**浙江省二等奖**。
+    \item \textbf{核心技术}：参与机电一体化系统及电源模块设计，负责微控制器控制程序编写，配合团队实现复杂电力电子电路的智能控制。
+\end{itemize}
+
+\projectsep
+
+% --- SRTP ---
+\textbf{浙江大学 SRTP（大学生科研训练计划）} \hfill 2024 -- 2025 学年 \titlebreak
+项目角色：**项目核心成员**
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{项目成果}：项目成功结题，因学术表现与科研成果优异，**获评院级优秀项目**。
+\end{itemize}
+
+\projectsep
+
+% --- 节能减排 ---
+\textbf{浙江大学节能减排大赛} \hfill 2024 -- 2025 学年 \titlebreak
+项目成果：深度参与节能减排创新产品的原理设计、仿真优化与物理样机搭建，荣获**校级三等奖**。
+
+\projectsep
+
+% --- SQTP ---
+\textbf{浙江大学 SQTP（学生素质训练计划）} \hfill 2024 -- 2025 学年 \titlebreak
+项目角色：项目小组成员
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{项目成果}：参与**校级重点项目**的研究论证、方案策划与最终落地，成效显著。
+\end{itemize}
+
+
+\section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 学生工作与领袖经验}
+
+\textbf{班级与团支部管理} \titlebreak
+在多项班级建设及军训管理中展现出出色的团队凝聚力、组织协调与日常管理能力。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{电信 2302 班 班长}（电气工程学院） \hfill 2024.09 -- 至今 \\
+    统筹班级整体日程与日常建设，积极组织班级集体活动，推动班级向凝聚力、优良学风方向建设。
+    \item \textbf{工科试验班 2323 团支部书记} \hfill 2023.09 -- 2024.06 \\
+    负责组织和开展团支部日常工作，引导支部青年思想与组织建设；因工作成果优异，**获评校级、园级“优秀团干部”**。
+    \item \textbf{军训三团三连二班 班长} \hfill 2023.09 \\
+    负责军训期间的日常队列管理与纪律维持，保障各项训练任务高效安全完成。
+\end{itemize}
+
+\projectsep
+
+\textbf{学长组建设（Peer Mentoring）} \titlebreak
+负责新生的破冰、学业生涯规划与大一生活适应性引导。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{24 级学长组 组长} \hfill 2024.09 -- 2025.06 \\
+    主导设计新生入校引导，策划方案获评**“蓝田学长组优秀破冰方案”**；个人因表现优异获评**“24-25校级优秀学长”**，带领团队获评**“24-25园级优秀学长组”**。
+\end{itemize}
+
+\projectsep
+
+\textbf{学生代表} \titlebreak
+积极参与学校及学园事务的民主监督与建言献策。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{浙江大学学生代表大会 代表 \textbar\ 蓝田学园学生代表大会 代表} \hfill 2023.09 -- 至今 \\
+    认真履行代表职责，广泛收集并反映同学诉求，撰写高质量提案，行使民主监督权利。
+\end{itemize}
+
+\projectsep
+
+\textbf{学生组织与部门骨干经历} \titlebreak
+在校内多个高水平学生组织及研发团队中任职，支撑日常技术维护与优秀内容产出。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{浙江大学图书馆学生助管中心（系统研发部成员）} \hfill 2024.09 -- 至今 \\
+    负责图书馆相关服务网站的日常技术维护、运行保障、安全状态监控与后台系统更新。
+    \item \textbf{机械学院考拉工作室（运营部 6.0 成员）} \hfill 2024.09 -- 2025.06 \\
+    协助规划考拉工作室的日常自媒体运营，主导设计多项大型品牌活动的宣传推广方案。
+    \item \textbf{“求是潮”视频团队（成员）} \hfill 2023.09 -- 2024.06 \\
+    参与学校多项官方高水平视频项目的选题策划、分镜设计、现场拍摄及后期剪辑。
+\end{itemize}
+
+
+\section{\makebox[\widthof{\faHeartO}][c]{\color{CVBlue}\faHeartO}\ 社会实践与志愿服务}
+
+\textbf{志愿服务} \titlebreak
+热心公益，奉献社会，累计**志愿服务时长近 350 小时**，被认定为**浙江大学五星志愿者**。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{“缘定浙大”大型志愿服务活动 \textbar\ 组长} \hfill 2024.05 \\
+    担任活动核心服务小组组长，负责志愿者排班、现场点对点协调及突发问题应急处理，保障了校庆大型活动有序进行。
+\end{itemize}
+
+\projectsep
+
+\textbf{社会实践与回访母校} \titlebreak
+扎根社会开展调研，心系母校反馈经验。
+\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
+    \item \textbf{暑期乡村振兴专项社会实践} \hfill 2024.07 \\
+    加入“强化专业责任，助力乡村振兴”调研小组，深入基层开展实地访谈、数据统计，并撰写高质量调研报告。
+    \item \textbf{寒假回访母校义乌二中宣讲活动} \hfill 2024.01 \\
+    赴义乌二中主讲浙江大学回访宣讲，详实分享备考经验与专业特色，**宣讲成果荣获校级一等奖**。
+\end{itemize}
+
+
+\section{\makebox[\widthof{\faList}][c]{\color{CVBlue}\faList}\ 荣誉奖项}
+\begin{itemize}[nosep]
+    \item \textbf{国家励志奖学金}（2024-2025 学年） \hfill \textbf{浙江大学一等奖学金}（2023-2024 学年）
+    \item \textbf{浙江大学“优秀学生”称号}（2023-2024 学年） \hfill \textbf{浙江大学郭谢碧蓉奖学金（二类）}（2023-2024 学年）
+    \item \textbf{四项个人标兵荣誉}：社会工作标兵、学业优秀标兵、公益服务标兵、对外交流标兵（2023-2024 学年）
+    \item \textbf{校级优秀学长} \hfill \textbf{校级优秀团干部}（2024-2025 学年）
+    \item \textbf{浙江大学五星志愿者} \hfill \textbf{蓝田学园优秀团干部}（2023-2024 学年）
+    \item \textbf{蓝田学园入党积极分子拔尖训练营 优秀成员} \hfill \textbf{本科生班团骨干培训“优秀成员”}
+    \item \textbf{校园文明礼仪形象大赛一等奖} \hfill \textbf{蓝田学园班级定向越野团队赛二等奖}
+\end{itemize}
+    
+
+\section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 专业技能}
+\begin{itemize}[nosep]
+    \item \textbf{工程与机电一体化技术}：熟悉机电一体化系统开发基础，掌握 3D 打印、工程焊接等实用硬件调试技术；在机器人及微控制系统的外部架构设计、内部程序编写与系统联调上具备丰富实践经验。
+    \item \textbf{外语能力}：英语水平良好（通过 CET-4, CET-6），能够顺畅、无障碍地阅读并检索英文技术文献、学术期刊及器件数据手册（Data Sheet），具备撰写英文学术论文与进行日常邮件交流的能力。
+    \item \textbf{综合软实力}：在多项大型活动、班级和学长组管理中磨砺了极佳的组织协调、团队管理与人际沟通能力；善于应对复杂多变的突发状况，逻辑清晰，工作踏实。
+\end{itemize}
+\end{document}
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 自我评价}
 \begin{itemize}[nosep]
     \item \textbf{学习热情}：对于自动化与机器人领域充满兴趣，积极参与相关课程与项目，具备持续学习的动力。
