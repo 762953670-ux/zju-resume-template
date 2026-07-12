@@ -104,10 +104,10 @@
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
 \textbf{浙江大学} \hfill 2023.09 -- 至今\\[0.5em] % 标题和正文间加一点距离
-电子信息工程（工科试验班2323）\quad 本科在读 
+电子信息工程（23级/大三）\quad 本科在读 
 \begin{itemize}[nosep]
-    \item \textbf{学业表现}：专业排名 187/681（大一阶段名列前30\%），获浙江大学一等奖学金、国家励志奖学金、浙江大学郭谢碧蓉奖学金（二类）等。
-    \item \textbf{相关课程}：《电力电子技术》、《信号分析与处理》、《微处理器原理与应用》、《工程电磁场与波》、《半导体物理》、《控制理论》等。
+    \item \textbf{学业表现}：专业排名 32/75，获浙江大学一等奖学金、国家励志奖学金、浙江大学郭谢碧蓉奖学金（二类）等。
+    \item \textbf{相关课程}：《电力电子技术》、《信号分析与处理》、《微处理器原理与应用》、《工程电磁场与波》、《通信原理》、《人工智能与互联网》、《半导体物理》、《控制理论》等。
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 学术与项目经历}
@@ -116,31 +116,31 @@
 \textbf{第二届电力电子国际会议（IEEE ZPEC 2026）录用学术论文} \hfill 2026.04 -- 至今 \titlebreak
 \textbf{论文成果}：于第二届浙江电力电子国际会议发表学术论文 1 篇，已正式录用（会议将于 2026 年 8 月召开）。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{学术研究}：针对宽禁带半导体（SiC/GaN）在高频开关应用中的损耗与 EMI 问题，研究高频双向 DC-DC 变换器的有源门极驱动（AGD）控制技术。
-    \item \textbf{仿真优化}：主导双向 DAB 变换器的仿真模型搭建，优化开关瞬态的 $dv/dt$ 和 $di/dt$ 阻尼控制，通过精准的分段驱动电流实现零电压开关（ZVS）范围拓宽，显著提升了变换系统的综合功率密度与运行效率。
-    \item \textbf{学术规范}：D. Chen, ..., ..., \textbf{X. Kang}, ..., Y. Yang, ``[在此填入你的论文英文题目],'' in \textit{Proc. IEEE International Zhejiang Power Electronics Conference (ZPEC)}, 2026. (Accepted/To appear)
+    \item \textbf{学术研究}：针对局部阴影遮挡条件（PSC）下光伏阵列输出呈现多峰值、极易陷入局部最大功率点的难题，深入开展光伏阵列最大功率点动态跟踪（MPPT）智能优化算法研究。
+    \item \textbf{仿真优化}：构建了复杂局部阴影下的多路并联光伏组件高阶离散数学模型，通过在 Simulink 中实现先进的智能启发式优化算法，确保了光伏系统在大范围剧烈波动辐照下能快速、平稳锁定全局最大功率点（GMPP），有效抑制传统扰动观察法的功率振荡，提升动态跟踪效率。
+    \item \textbf{规范学术引用}：D. Chen, ..., ..., \textbf{X. Kang}, ..., Y. Yang, ``Research on Dynamic Maximum Power Point Tracking of Photovoltaics Based on Intelligent Optimization Algorithms,'' in \textit{Proc. IEEE International Zhejiang Power Electronics Conference (ZPEC)}, 2026. (Accepted/To appear)
 \end{itemize}
 
 \projectsep
 
 % --- 中国高校智能机器人创意大赛 ---
-\textbf{中国高校智能机器人创意大赛} \hfill 2025 -- 2026 学年 \titlebreak
-\textbf{项目角色}：第一负责人 \hfill \textbf{获得奖项}：浙江省一等奖、校级三等奖
+\textbf{中国高校智能机器人创意大赛（仿人机器人格斗 A 赛道 \textbar\ 统一部件组）} \hfill 2025 -- 2026 学年 \titlebreak
+\textbf{项目角色}：第一负责人 \hfill \textbf{获得奖项}：浙江省一等奖、浙江大学校级三等奖
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{系统搭建}：基于 ROS (Robot Operating System) 系统框架，主导搭建了集机械视觉感知、自主导航建图与机械臂高精度物料抓取于一体的机电系统。
-    \item \textbf{底盘控制}：进行麦克纳姆轮移动底盘的动力学建模，基于微控制器实现了底层电机的闭环 PID 闭环调速控制，利用串口实现上位机与下位机的高速稳定数据双向传输。
-    \item \textbf{算法调试}：引入激光雷达完成 Gmapping 算法定位建图，编写 ROS 核心状态机，控制 6 自由度机械臂精确完成任务流程。
+    \item \textbf{算法优化}：优化并设计了仿人机器人高精度闭环快速巡线控制律与格斗动作姿态自适应调整算法，有效抑制对抗冲击，大幅提升机器人的格斗打击稳定性与出拳速度。
+    \item \textbf{视觉开发}：基于 OpenCV 视觉库与 Jetson 算力平台，独立编写了针对复杂竞技背景环境下的 AprilTag 二维定位码精确识别算法及敌方武器特征实时检测算法。
+    \item \textbf{任务逻辑}：开发多状态有限状态机（FSM）自主决策系统，全流程自动运行“巡线、检测威胁、闪避、接敌格斗”及精确“击打铜锣”等全套高难度连贯竞技竞技对抗任务。
 \end{itemize}
 
 \projectsep
 
 % --- 高校电气电子工程创新大赛 ---
-\textbf{高校电气电子工程创新大赛} \hfill 2025 -- 2026 学年 \titlebreak
+\textbf{高校电气电子工程创新大赛（企业赛道）} \hfill 2025 -- 2026 学年 \titlebreak
 \textbf{项目角色}：核心研发成员 \hfill \textbf{获得奖项}：浙江省二等奖
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{电源研发}：参与设计并研发了基于氮化镓（GaN）宽禁带功率器件的高效率、高功率密度同步 Buck-Boost 电源变换器。
-    \item \textbf{算法控制}：采用 STM32G4 单片机作为数字主控芯片，在 ADC 采样中断中实现了双环 PID（电压外环、电流内环）数字反馈控制算法。
-    \item \textbf{实验验证}：主导双层 PCB 板级抗电磁干扰（EMI）紧凑排布与散热设计，经实测，变换器在 100kHz 频段下系统转换效率达到 96.5\%。
+    \item \textbf{硬件设计}：针对企业赛道大容量、高功率密度的工业指标要求，参与研发了一款微型化同步升降压（Buck-Boost）DC-DC 变换器，并优化功率高频回路阻抗以抑制开关瞬态噪声。
+    \item \textbf{算法控制}：采用数字主控芯片实现了高频 ADC 采样和数字环路滤波器设计，编写数字双环 PI 闭环控制，优化了变换器在电网/负载阶跃扰动下的动静态调节品质。
+    \item \textbf{硬件调优}：进行了严谨的电感磁芯损耗理论计算与双层 PCB 电磁抗干扰（EMI）紧凑布局，变换器在高开关频率下散热良好，各项指标均达到工业级企业设计规范。
 \end{itemize}
 
 \projectsep
@@ -149,8 +149,8 @@
 \textbf{浙江大学 SRTP（大学生科研训练计划）} \hfill 2024 -- 2025 学年 \titlebreak
 \textbf{项目角色}：项目核心成员 \hfill \textbf{项目评级}：院级优秀结题项目
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数学建模}：围绕单相并网逆变器及其低通 LCL 滤波器控制，利用 MATLAB/Simulink 建立了系统高阶离散数学仿真模型。
-    \item \textbf{算法阻尼}：分析并应用并网电流比例谐振（PR）控制，引入基于电容电流反馈的主动阻尼抑制算法，有效压制滤波器的谐振尖峰，将网侧并网电流的总谐波畸变率（THD）降至 2.1\% 以下。
+    \item \textbf{课题研究}：主导开展《基于智能优化算法的光伏最大功率点动态跟踪研究》课题，研究多功率峰值下的逆变控制优化技术，建立完整的光伏逆变数学拓扑模型。
+    \item \textbf{仿真阻尼}：利用 MATLAB/Simulink 研究光伏并网控制算法，研究电容电流反馈主动阻尼抑制技术，成功降服并网滤波器谐振，将网侧并网电流总谐波畸变率（THD）降至优异的 2.1\% 以下。
 \end{itemize}
 
 \projectsep
@@ -159,61 +159,52 @@
 \textbf{浙江大学节能减排大赛} \hfill 2024 -- 2025 学年 \titlebreak
 \textbf{项目角色}：第二负责人 \hfill \textbf{获得奖项}：校级三等奖
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{系统方案}：协助设计了一种基于半导体温差发电片（TEC）塞贝克效应的高效能量收集系统，主导整体测控平台的方案设计。
-    \item \textbf{测控系统}：负责微控制器的软硬件联合研发，基于 ESP32 与低功耗数字传感器链，实现对发电单元电压、电流及热源温差的高精度实时采集，并通过 Wi-Fi 模块将数据动态上传至云平台展示。
-\end{itemize}
-
-\projectsep
-
-% --- SQTP ---
-\textbf{浙江大学 SQTP（学生素质训练计划）} \hfill 2024 -- 2025 学年 \titlebreak
-\textbf{项目角色}：项目小组成员 \hfill \textbf{项目评级}：校级重点立项项目
-\begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{项目调研}：主导开展校内公共设施能效普查、用电行为大范围问卷调研与数据统计，输出高质量校园绿色用电能效诊断报告。
-    \item \textbf{成果落地}：协助完成校园绿色用电行为习惯引导方案推广，保障了校级重点项目的顺利高质量结题。
+    \item \textbf{三维建模}：应用 SolidWorks 独立完成氢能燃料电池无人机系统（氢能无人机）的三维实体装配建模与高精度结构设计，对机架整体受力、重心排布进行静力学优化，实现了结构轻量化。
+    \item \textbf{电路系统}：独立主导无人机供电系统的电路开发，设计了包含氢燃料电池堆、锂电池、高频直流变换器（DC-DC）与 Pixhawk 飞行控制器的功率级总配电总线与供电切换安全保护逻辑。
+    \item \textbf{项目推广}：完成节能减排申报方案的减排理论计算，并完成了对项目申报答辩 PPT 的深度美化和排版重构。
 \end{itemize}
 
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 学生工作与领袖经验}
 
 \textbf{班级与团支部管理} \titlebreak
-积极担任班级及团支部骨干，展现了出色的组织凝聚力与常态化制度建设能力。
+在多项班级建设中展现出出色的团队凝聚力、组织协调与日常管理能力。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{电信 2302 班 班长}（电气工程学院） \hfill 2024.09 -- 至今 \\
-    全面统筹班级整体日程与班委会日常建设，组织多项班级集体团建活动，获优秀班级风貌展现。
+    统筹班级整体日程与班委会日常建设，积极组织班级集体活动，推动班级向优良学风方向建设。
     \item \textbf{工科试验班 2323 团支部书记} \hfill 2023.09 -- 2024.06 \\
-    组织开展支部日常日常管理与思想作风建设，任期内团支部工作成效显著，**获评校级、园级“优秀团干部”**。
+    组织开展支部日常管理与思想作风建设，任期内团支部工作成效显著，获评校级、园级\textbf{“优秀团干部”}。
 \end{itemize}
 
 \projectsep
 
 \textbf{学长组建设（Peer Mentoring）} \titlebreak
-带领学长组进行学业规划引导与大学生活适应性破冰。
+带领学长组进行学业生涯规划与大一生活适应性破冰。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{24 级学长组 组长} \hfill 2024.09 -- 2025.06 \\
-    统筹新生入校活动策划，个人方案获评**“蓝田学长组优秀破冰方案”**；个人因工作成果优异荣获**“24-25校级优秀学长”**，所率团队荣获**“24-25园级优秀学长组”**。
+    统筹新生入校活动策划，个人方案获评\textbf{“蓝田学长组优秀破冰方案”}；个人因工作成果优异荣获\textbf{“24-25校级优秀学长”}，所率团队荣获\textbf{“24-25园级优秀学长组”}。
 \end{itemize}
 
 \projectsep
 
 \textbf{学生代表} \titlebreak
-积极行使学生代表职责，发挥桥梁纽带作用。
+积极参与学校及学园事务的民主监督与建言献策。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{浙江大学学生代表大会 代表 \textbar\ 蓝田学园学生代表大会 代表} \hfill 2023.09 -- 至今 \\
-    广泛收集反映同学诉求与教学管理意见，深度参与学校及学园多项发展建设性提案的撰写与审议。
+    认真履行代表职责，广泛收集并反映同学诉求，撰写高质量提案，行使民主监督权利。
 \end{itemize}
 
 \projectsep
 
 \textbf{学生组织与部门骨干经历} \titlebreak
-在校内高水平技术团队中担任核心成员，保障日常工作高效产出。
+在校内多个高水平学生组织及研发团队中任职，支撑日常技术维护与优秀内容产出。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{浙江大学图书馆学生助管中心（系统研发部成员）} \hfill 2024.09 -- 至今 \\
-    负责图书馆信息化管理服务系统、相关官方主页的技术日常维护及系统后台安全更新。
+    负责图书馆相关服务网站的日常技术维护、运行保障、安全状态监控与后台系统更新。
     \item \textbf{机械学院考拉工作室（运营部 6.0 成员）} \hfill 2024.09 -- 2025.06 \\
-    参与策划多项学院标志性大型活动，负责运营自媒体矩阵平台，推动品牌价值建设。
+    协助规划考拉工作室的日常自媒体运营，主导设计多项大型品牌活动的宣传推广方案。
     \item \textbf{“求是潮”视频团队（成员）} \hfill 2023.09 -- 2024.06 \\
-    参与校内核心高水平宣传片、采访纪录片的选题策划、现场拍摄及剪辑后期。
+    参与学校多项官方高水平视频项目的选题策划、分镜设计、现场拍摄及剪辑后期。
 \end{itemize}
 
 
@@ -231,29 +222,29 @@
 \textbf{项目角色}：调研核心成员 \textbar\ 宣讲主讲人 \hfill \textbf{获得奖项}：宣讲评比校级一等奖
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{乡村振兴调研}：深入基层农户家庭开展实地访谈、数据统计，并参与撰写高质量社会调查调研报告。
-    \item \textbf{赴义乌二中回访宣讲}：担任主宣讲人回访母校义乌二中开展线下主题宣讲会，分享求是精神与备考心得，宣讲成果评比荣获**校级一等奖**。
+    \item \textbf{赴义乌二中回访宣讲}：担任主宣讲人回访母校义乌二中开展线下主题宣讲会，分享求是精神与备考心得，宣讲成果评比荣获\textbf{校级一等奖}。
 \end{itemize}
 
 
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 荣誉奖项}
 \begin{itemize}[nosep]
-    \item \textbf{国家励志奖学金}（2024--2025 学年） \hfill 2025
-    \item \textbf{浙江大学一等奖学金}（2023--2024 学年） \hfill 2024
-    \item \textbf{浙江大学郭谢碧蓉奖学金（二类）}（2023--2024 学年） \hfill 2024
-    \item \textbf{浙江大学“优秀学生”荣誉称号}（2023--2024 学年） \hfill 2024
-    \item \textbf{浙江大学社会工作标兵、学业优秀标兵、公益服务标兵、对外交流标兵} \hfill 2024
-    \item \textbf{浙江大学校级优秀学长、校级优秀团干部} \hfill 2025
-    \item \textbf{浙江大学五星志愿者}（累计志愿服务近 350 小时） \hfill 2024
-    \item \textbf{蓝田学园优秀团干部、入党积极分子拔尖训练营“优秀成员”} \hfill 2024
-    \item \textbf{“礼韵浙里，美育新人”校园文明礼仪形象大赛一等奖} \hfill 2024
-    \item \textbf{蓝田学园班级定向越野团队赛二等奖} \hfill 2024
+    \item \textbf{国家励志奖学金} \hfill 2024--2025 学年
+    \item \textbf{浙江大学一等奖学金} \hfill 2023--2024 学年
+    \item \textbf{浙江大学郭谢碧蓉奖学金（二类）} \hfill 2023--2024 学年
+    \item \textbf{浙江大学“优秀学生”荣誉称号} \hfill 2023--2024 学年
+    \item \textbf{浙江大学社会工作标兵、学业优秀标兵、公益服务标兵、对外交流标兵} \hfill 2023--2024 学年
+    \item \textbf{浙江大学校级优秀学长、校级优秀团干部} \hfill 2024--2025 学年
+    \item \textbf{浙江大学五星志愿者} \hfill 累计志愿服务近 350 小时
+    \item \textbf{蓝田学园优秀团干部、入党积极分子拔尖训练营“优秀成员”} \hfill 2023--2024 学年
+    \item \textbf{“礼韵浙里，美育新人”校园文明礼仪形象大赛一等奖} \hfill 2023--2024 学年
 \end{itemize}
     
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 专业技能}
 \begin{itemize}[nosep]
-    \item \textbf{工程与机电一体化技术}：熟悉机电一体化系统开发基础，掌握 3D 打印、工程焊接等实用硬件调试技术；在机器人及微控制系统的外部架构设计、内部程序编写与系统联调上具备丰富实践经验。
-    \item \textbf{外语能力}：英语水平良好（通过 CET-4, CET-6），能够顺畅、无障碍地阅读并检索英文技术文献、学术期刊及器件数据手册（Data Sheet），具备撰写英文学术论文与进行日常邮件交流的能力。
-    \item \textbf{综合软实力}：在多项大型活动、班级和学长组管理中磨砺了极佳的组织协调、团队管理与人际沟通能力；善于应对复杂多变的突发状况，逻辑清晰，工作踏实。
+    \item \textbf{电力电子与自动控制}：熟悉电力电子拓扑结构设计，熟练掌握 DC-DC 变换器设计。掌握光伏发电系统建模，熟练应用 MATLAB/Simulink 开展系统级仿真，精通 PR并网、闭环双向 PI 等数字控制算法。
+    \item \textbf{工程制图与电气设计}：熟练使用 SolidWorks 进行复杂机电系统（如氢能多旋翼无人机系统）的 3D 三维实体架构建模、轻量化减重设计与受力静力学分析；具备独立设计高安全性总配电总线逻辑、电气连接供电回路的技术基础。
+    \item \textbf{嵌入式开发与图像视觉}：熟悉 ROS 机器人操作系统开发与有限状态机决策逻辑管理；熟练使用 C/C++，掌握 OpenCV 视觉识别技术，可针对 AprilTag 定位、敌方武器检测等场景编写高精度、低延迟图像目标识别算法，熟悉 STM32、ESP32 与单片机中断运行机制。
+    \item \textbf{外语能力与软实力}：英语听说读写良好（通过 CET-4, CET-6），能够顺畅、无障碍地阅读英文学术期刊与数据手册。在班级、学长组管理和多项大赛中展现出优秀的团队凝聚力、危机公关和统筹组织硬实力。
 \end{itemize}
 \end{document}
