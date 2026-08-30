@@ -113,11 +113,9 @@
 
 % --- 中国高校智能机器人创意大赛 ---
 \textbf{中国高校智能机器人创意大赛（仿人机器人格斗 A 赛道 ｜ 统一部件组）} \hfill 2025 -- 2026 学年 \titlebreak
-\textbf{项目角色}：第一负责人 \hfill \textbf{获得奖项}：国家一等奖（2026年8月24日颁发）
+\textbf{项目角色}：第一负责人 \hfill \textbf{获得奖项}：国家一等奖
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{控制与算法研发}：主导基于有限状态机（FSM）的自主任务统筹开发，设计十字定位“双子状态连续确认”策略解决灰度传感器抖动误触发；设计巡线 PD 控制器，通过微分项提前抑制控制摆动；通过将串口姿态数据队列限制为单帧并清空缓冲区，攻克了 IMU 数据积压引起的动作延迟累积问题。
-    \item \textbf{视觉与图像感知}：将 YOLOv5m 重新训练并部署至 RK3588S 边缘平台，在输入尺寸转换时采用“黑边填充”重采样成功消除图像拉伸畸变，实现对“刀-剑-锤”的高精度顺序搜索与距离判定；设计 20\%--100\% 自动曝光扫描扫描策略，消除环境强光干扰，使动作区 AprilTag 稳定识别率达 95\%。
-    \item \textbf{底层逆向工程（核心突破）}：在赛前针对限制移动速度的官方升级固件，**利用二进制逆向工具对加密固件（.BIN）进行反编译与汇编代码分析**，精准定位并破除 0.3 的原速度上限硬限制，重构运动逻辑，使机器人在操控格斗中获得压倒性的速度优势。
+    \item \textbf{个人贡献}：统筹项目软硬件系统。基于 ROS 与 OpenCV 在 Jetson 算力平台实现闭环巡线控制、AprilTag 定位及对手武器识别算法开发，编写状态机决策系统控制机器人自主对决与击打铜锣。
 \end{itemize}
 
 \projectsep
@@ -142,7 +140,7 @@
 
 % --- ZPEC 论文 ---
 \textbf{第二届电力电子国际会议（IEEE ZPEC 2026）学术论文发表} \hfill 2026.08 \titlebreak
-\textbf{研究成果}：于第二届浙江电力电子国际会议发表并汇报学术论文 1 篇（论文已被 IEEE Xplore 正式录用收录）。
+\textbf{研究成果}：于第二届浙江电力电子国际会议（ZPEC 2026）发表并汇报学术论文 1 篇（论文已被 IEEE Xplore 正式录用收录）。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{个人贡献}：负责高频双向 DAB 变换器建模仿真，利用分段驱动电流优化有源门极驱动（AGD）开关瞬态 $dv/dt$ 控制，抑制高频开关共模噪声并宽展零电压开关（ZVS）软开关范围。
     \item \textbf{论文引用}：D. Chen, ..., ..., \textbf{X. Kang}, ..., Y. Yang, ``Research on Dynamic Maximum Power Point Tracking of Photovoltaics Based on Intelligent Optimization Algorithms,'' in \textit{Proc. IEEE International Zhejiang Power Electronics Conference (ZPEC)}, Aug. 2026.
@@ -155,9 +153,9 @@
 担任班级及支部核心骨干，在日常事务协调中展现良好的组织凝聚能力。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{电信 2302 班 班长}（电气工程学院） \hfill 2024.09 -- 至今 \\
-    统筹日常班委建设与活动日程，组织多次主题班级活动，有效促进班级凝聚力建设。
+    统筹日常班委会建设，积极组织班级集体活动与学风建设，因工作表现突出，获评校级、园级\textbf{“优秀团干部”}。
     \item \textbf{工科试验班 2323 团支部书记} \hfill 2023.09 -- 2024.06 \\
-    组织开展支部日常管理与思想作风建设，任期内团支部工作成效显著，获评校级、园级\textbf{“优秀团干部”}。
+    组织开展支部日常管理与思想作风建设，引导支部青年思想凝聚，获评园级\textbf{“优秀团干部”}。
 \end{itemize}
 
 \projectsep
@@ -221,6 +219,6 @@
     \item \textbf{控制工程与嵌入式系统}：熟悉机电一体化软硬件联合调优。精通高阶有限状态机（FSM）任务流控制与 PD 运动控制参数调节。精通光伏 MPPT 智能算法、并网逆变 PR 控制与双闭环 PI 环路控制。掌握基于 IMU 的姿态解算串口队列数据溢出与指令延迟积压优化技术。
     \item \textbf{逆向工程与底层开发}：具备实用的二进制软件逆向工程经验，熟练掌握固件编译产物（.BIN等二进制格式）的反编译分析方法与汇编指令（Assembly）精确定位调试，具备绕过底层系统运行硬性限制、执行二进制补丁（Binary Patching）的技术能力。
     \item \textbf{计算机视觉与机械建模}：熟练掌握 YOLOv5m、AprilTag 等目标检测与识别模型在嵌入式端（RK3588S平台）的轻量化部署，熟练应用 OpenCV 进行黑边填充等防拉伸变形图像预处理；熟练使用 SolidWorks 进行 3D 实体装配建模与轻量化受力静力学分析。
-    \item \textbf{学术研究与专业外语}：熟练掌握 LaTeX 论文排版与标准英文学术论文撰写，已正式发表 IEEE 协办会议论文。英语听说读写流利（通过 CET-4, CET-6），能够流畅、无障碍地阅读并检索英文技术文献与硬件数据手册（Data Sheet）。
+    \item \textbf{学术研究与外语能力}：英语读写流畅（通过 CET-4, CET-6），能够顺畅、无障碍地阅读英文学术期刊与数据手册。掌握 LaTeX 学术排版与英文学术论文规范撰写。具备良好的危机公关与统筹组织能力。
 \end{itemize}
 \end{document}
